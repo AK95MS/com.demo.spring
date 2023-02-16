@@ -4,6 +4,7 @@ import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
 public class Samosa {
+public int b=20;
  public int a=10;
 	private double price;
 
