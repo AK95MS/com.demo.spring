@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-2.5.xsd
+http://www.springframework.org/schema/p
+http://www.springframework.org/schema/p/spring-context-2.5.xsd">
+
+	<bean class="com.demo.collection.Emp" name="emp">
+		<property name="name" value="Akshay" />
+		<property name="phones">
+			<list>
+				<value>9049538731</value>
+				<value>8007088561</value>
+				<value>7875681400</value>
+				<value>9049538712</value>
+			</list>
+		</property>
+		<property name="addresses">
+			<set>
+				<value>Kolhapur</value>
+				<value>Kolhapur</value>
+				<value>Maumbai</value>
+				<value>Kolkata</value>
+				<value>Pune</value>
+			</set>
+		</property>
+		<property name="cources">
+			<map>
+				<entry key="JAVA" value="6-Month" />
+				<entry key="python" value="5-Month" />
+				<entry key="php" value="2-Month" />
+			</map>
+		</property>
+	</bean>
+	<bean class="com.demo.collection.Emp" name="emp1">
+		<property name="name" value="Chetan" />
+		<property name="phones">
+			<list>
+				<value>9049538731</value>
+				<value>8007088561</value>
+				<value>7875681400</value>
+				<value>9049538712</value>
+			</list>
+		</property>
+		<property name="addresses">
+			<set>
+				<value>Kolhapur</value>
+				<value>Kolhapur</value>
+				<value>Maumbai</value>
+				<value>Kolkata</value>
+				<value>Pune</value>
+			</set>
+		</property>
+		<property name="cources">
+			<map>
+				<entry key="JAVA" value="6-Month" />
+				<entry key="python" value="5-Month" />
+				<entry key="php" value="2-Month" />
+			</map>
+		</property>
+	</bean>
+
+</beans>
